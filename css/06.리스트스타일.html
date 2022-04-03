@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트스타일</title>
+    <style>
+        .ul1{
+            list-style-type: circle;
+        }
+        .ul2{
+            list-style-type: square;
+        }
+        .ul3{
+            list-style-type: none;
+        }
+        .ol1{
+            list-style-type: lower-roman;
+        }
+        <!-- 글머리 이미지로 대체할거면 16px*16px로 하는게 안깨지고 좋음 -->
+        .ul4{
+            list-style-image: url(image/kakao.jpg);
+        }
+        <!-- li는 기본상태가 들여쓰기 안된거고(보기엔된것같아도) inside해야 들여쓰기 되는것(주의) -->
+        .ul5{
+            list-style-position: inside;
+        }
+        .ul6{
+            list-style-position: outside;
+        }
+        .ul7{
+            list-style: square inside url(image/kakao.jpg);
+        }
+        .ul8{
+            list-style: circle outside;
+        }
+    </style>
+</head>
+<body>
+    <h1>목록관련스타일</h1>
+    <hr>
+    <h3>list-style-type : 목록기호의 스타일을 지정</h3>
+    <pre>
+        ul : 선택자{list-style-type : dics | circle | square | none}
+        ol : 선택자{list-style-type : decimal | decimal-leading-zero | lower-roman | upper-roman | lower-alpha | uppers_alpha}
+    </pre>
+    <ul class="ul1">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul2">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul3">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ol class="ol1">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ol>
+    <hr>
+    <h3>list-style-image : 글기호 대신 이미지를 사용</h3>
+    <pre>선택자{list-style-image : url(이미지파일경로)}</pre>
+    <ul class="ul4">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <hr>
+    <h3>list-style-position : 목록기호 들여쓰기 여부</h3>
+    <pre>선택자{list-style-position : inside | outside}</pre>
+    <ul class="ul5">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul6">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <hr>
+    <h3>list-style : 목록스타일을 한번에 지정하는 속성</h3>
+    <pre>선택자{list-style : type position image}</pre>
+    <ul class="ul7">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+    <ul class="ul8">
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,83 @@
+div[name=name2]{
+    background-color: chocolate;
+}
+
+div[class^=div] {
+    color: red;
+}
+/*자손선택자*/
+#div1>h4{
+    color: orangered;
+}
+#div1>*{
+    background-color:springgreen;
+}
+#ul1>li{
+    background-color:palevioletred;
+}
+#div1>#ul2>li{
+    background-color: palegoldenrod;
+}
+/*후손선택자*/
+#div1 li{
+    color: red;
+}
+/*동위선택자*/
+#div2>.test3+div{
+    background-color: cadetblue;
+}
+/*div2>.test2~div하면 test2 다음꺼부터 div전체 선택(3~5번까지)
+- but 동위든 후손이든 자기보다 이전요소는 선택불가능(css에서는)
+*/
+#div2>.test2~div{
+    color:red
+}
+/*반응선택자*/
+.div3{
+    width: 300px;
+    height: 300px;
+    background-color: orangered;
+}
+#active-test:active{
+    background-color: yellow;
+}
+#hover-test:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+/*상태선택자*/
+/*+label은 선택한 거의 다음 label을 의미*/
+input[name=hobby]:checked+label{
+    width: 20px;
+    height: 20px;
+}
+input[name=gender]{
+    display: none;
+}
+input[name=gender]:checked+label{   
+    color: white;
+    background-color: black;
+}
+input[name=gender]:checked+label{
+    width: 20px;
+    height: 20px;
+}
+label{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+/*focus는 누르면 효과적용되는 기능*/
+input[name=id]:focus{
+    background-color: aqua;
+    outline: none;
+    border: none;
+}
+
+input[name=pw]:disabled{
+    background-color: black;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일적용방법</title>
+    <!-- 내부스타일시트는 style태그에 css속성을 적용 -->
+    <style>
+        /* h2태그의 글씨색 및 배경색 변경 */
+        h2{
+            color: brown;
+            background-color: black;
+        }
+    </style>
+    <!-- 외부에 스타일파일(css)을 만들고 불러와서 적용하는 방식 link/relation 정의 -->
+    <link href="css/test.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 인라인 스타일 시트 -->
+    <h1 style="color: aqua;background-color: blueviolet;">h1</h1>
+    <!-- 내부 스타일 시트 -->
+    <h2>h2</h2>
+    <!-- 외부 스타일 시트 -->
+    <h3>h3</h3>
+</body>
+</html>

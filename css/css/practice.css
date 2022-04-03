@@ -1,0 +1,39 @@
+.row{
+    font-size: 0px;
+}
+.row>div{
+    width: 150px;
+    height: 150px;
+    border: 5px dashed black;
+    display: inline-block;
+}
+/*자손후손은 클래스와 뭐냐 그거 사이에 순위가 위치하므로 주의*/
+#b1{
+    border: 5px solid blue;
+    border-bottom-style: dashed;
+    border-right-style: dashed;
+    border-top-left-radius: 50px;
+}
+#b3{
+    border: 5px solid green;
+    border-bottom-style: dashed;
+    border-left-style: dashed;
+    border-top-right-radius: 50px;
+}
+/*.row:nth-of-type(2)>div:nth-of-type(2){
+  } -> 스타일을 넣기위해 반드시 class나 id를 넣지않아도 구조를 이용해서 할 수도 있다는걸 보여주려고 한거라함*/
+#b5{
+    border: 5px dotted pink;
+}
+#b7{
+    border: 5px solid yellow;
+    border-top-style: dashed;
+    border-right-style: dashed;
+    border-bottom-left-radius: 50px;
+}
+#b9{
+    border: 5px solid red;
+    border-top-style: dashed;
+    border-left-style: dashed;
+    border-bottom-right-radius: 50px;
+}

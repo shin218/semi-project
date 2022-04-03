@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크</title>
+</head>
+<body>
+    <h1 id="top">문서시작</h1>
+    <!-- 시스템 내부에 있는 페이지로 이동할 때 -->
+    <!-- target : href경로의 파일이 열리는 위치 지정
+         _self : 현재 창을 변경
+         _blank : 새창을 띄워서 문서열기
+         _parent : 부모창에서 문서열기(부모창 -> 현재 창을 열어준 창)
+         _top : 최상위창 -->
+    <a href="01_글자관련태그.html" target="_self">01. 글자관련태그로 이동</a><br>
+    <a href="02_목록관련태그.html" target="_blank">02. 목록관련태그로 이동</a><br>
+    <a href="02_목록관련태그.html" target="_parent">02. 목록관련태그로 이동</a><br>
+    <!-- 시스템 외부에 있는 페이지로 이동할 때 -->
+    <a href="http://www.naver.com">네이버로 이동</a><br>
+    <a href="http://www.naver.com"><img src="image/dog.jpg"></a>
+    <hr>
+    <img src="image/dog.jpg" usemap="#dog">
+    <map name="dog">
+        <area shape="circle" coords="243,98,60" href="http://www.naver.com"  target="_self">
+        <area shape="circle" coords="386,268,51" href="http://www.naver.com" target="_self">
+    </map> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- href=#블라블라 하면 해당문서 내부(위치)로 이동 -->
+    <a href="#top">상단으로 이동</a>
+    
+</body>
+</html>

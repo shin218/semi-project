@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test100.html" method="post">
+        <div>
+            <label for="name">고객명 : </label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="phone">전화번호 : </label>
+            <input type="text" name="phone" id="phone"><br><br>
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email"><br><br>
+        </div>
+        <br>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" name="size" value="small" id="small">
+                <label for="small">Small</label><br><br>
+            <input type="radio" name="size" value="medium" id="medium">
+                <label for="medium">Medium</label><br><br>
+            <input type="radio" name="size" value="large" id="large">
+                <label for="large">Large</label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" name="topping" value="bacon" id="bacon">
+                <label for="bacon">베이컨</label><br><br>
+            <input type="checkbox" name="topping" value="cheese" id="cheese">
+                <label for="cheese">치즈</label><br><br>
+            <input type="checkbox" name="topping" value="onion" id="onion">
+                <label for="onion">양파</label><br><br>
+            <input type="checkbox" name="topping" value="mushroom" id="mushroom">
+                <label for="mushroom">버섯</label><br><br>   
+        </fieldset>
+        <br><br>
+        희망 배송 시간 : <input type="time" name="time"><br><br>
+        배송시 요청사항 : <textarea name="request" cols="40px" rows="10"></textarea>
+        <input type="submit" value="주문하기">
+    </form>
+</body>
+</html>

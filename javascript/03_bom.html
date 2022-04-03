@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <script>
+        let lat;//위경도 저장할 변수
+        let lng;
+        //화면에 필요한 요소가 다 만들어지면 로드가 끝나고 
+        //자동으로 한번 실행되는 함수
+        //javascript 코드를 아래에 두는 이유가 
+        //로드문제 때문임 - onload를 활용하면 이 문제도 해결가능
+        window.onload = function(){
+            console.log("화면 로드 완료");
+            const btn6 = document.querySelector("#btn6");
+            btn6.onclick = function(){
+                alert("짠");
+            }
+
+            const btn7 = document.querySelector("#btn7");
+            btn7.onclick = function(){
+                console.log("화면 높이값 : "+screen.height);
+                console.log("화면 너비 : "+screen.width);
+                console.log("실제 사용가능한 높이 : "+screen.availHeight);
+                console.log("실제 사용가능한 너비 : "+screen.availWidth);
+                console.log("사용 가능한 색상 수 : "+screen.colorDepth);
+                console.log("한 픽셀당 비트 수 : "+screen.pixelDepth);
+            }
+            const btn8 = document.querySelector("#btn8");
+            btn8.onclick = function(){
+                location.href = "http://www.naver.com";
+            }
+            const btn9 = document.querySelector("#btn9");
+            btn9.onclick = function(){
+                //화면 새로고침
+                location.reload();
+            }
+            //화면 로드가 완료되면 현위치의 위도/경도를 구해서 변수에 저장
+            //geolocation : 위경도 컨트롤
+            //getCurrentPosition -> 내 현재 위치를 조회 -> 조회 정보를 매개변수로 전달한 함수에 전달
+            //현재 
+            navigator.geolocation.getCurrentPosition(showMyLocation);
+
+            const btn10 = document.querySelector("#btn10");
+            btn10.onclick = function(){
+                //현 위/경도를 console.log로 출력
+                //어차피 프로젝트에는 지도 못써서 깊이 안하는것
+                console.log(lat);
+                console.log(lng);
+            }
+        }
+        //선언적 함수는 onload밖에 만들어 줘야함
+        function showMyLocation(position){
+            lat = position.coords.latitude;
+            lng = position.coords.longitude;
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>BOM(Browser Object Model)</h1>
+    <hr>
+    <h3>window.open : 높이와 너비를 입력하여 새창을 띄움</h3>
+    <h3>setTimeout : 일정시간 후 함수 한번 실행 / id리턴</h3>
+    <h3>clearTimeout : setTimeout을 종료</h3>
+    <h3>setInterval : 일정 시간마다 함수를 반복 실행 / id리턴</h3>
+    <h3>clearInterval : setInterval 종료</h3>
+    <h3>onload : 화면에 요소들이 로드 완료되면 자동으로 실행되는 함수</h3>
+    <button id="btn1">open</button>
+    <button id="btn2">setTimeout</button>
+    <button id="btn3">clearTimeout</button>
+    <button id="btn4">setInterval</button>
+    <button id="btn5">clearInterval</button>
+    <button id="btn6">onload</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <hr>
+    <h3>screen : client 운영체제 화면속의 속성값을 갖는 객체</h3>
+    <h3>location : 브라우저 주소표시줄(URL)와 관련된 객체</h3>
+    <h3>navigator : 브라우저에 대한 정보</h3>
+    <button id="btn7">screen</button>
+    <button id="btn8">location.href</button>
+    <button id="btn9">location.reload</button>
+    <button id="btn10">위/경도 조회</button>
+
+    <script src="js/09_bom.js"></script>
+</body>
+</html>

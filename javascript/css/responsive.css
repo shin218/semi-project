@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    width: 1000px;
+}
+.test{
+    background-color: powderblue;
+    width: 100%;
+    overflow: hidden;
+}
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border: 1px solid red;
+    float: left;
+}
+.div2{
+    width: 15%;
+    height: 100px;
+    background-color: greenyellow;
+    border: 1px solid green;
+    float: left;
+}
+.test2{
+    background-color: powderblue;
+    /*vw : viewport-width & vh : viewport-height 
+    -> 현재 브라우저 넓이를 1/100으로 나눔 => 100vw은 100/100*/
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+.navi{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    width: 100vw;
+    /*min-width : 990px은 990px보다 너비 작아지면 더이상 안 줄어드는 속성*/
+    /*너비가 상대적으로 변경되는 경우 컨텐츠를 확보하기 위한 최소한의 너비 설정(이 크기 밑으로 줄어들지 않음)
+    ul의 최대최소값을 조정하는 거지 화면의 최대최소 크기를 조정하는게 아님*/
+    min-width: 990px;
+    /*너비가 변경되는 경우 컨텐츠 확보를 위해 최대 너비 max-width(이 크기 이상으로 커지지 않음)*/
+}
+.navi>li{
+    float: left;
+    width: calc(100%/7);
+}
+.navi>li>a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid black;
+}

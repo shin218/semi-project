@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ifram은 웹페이지에 유튜브같은 다른 페이지 추가하는 기능 -->
+    <h2>iframe</h2>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/Upv_qByoUc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+    </iframe>
+    <hr>
+    <!--h2는 블럭(한줄) 하나를 다 차지하니까 블럭-->
+    <h2>안녕하세요</h2>가나다라마
+    <hr>
+    <!--b는 한줄안에 같이들어오고 글자만 바뀌니까 인라인-->
+    abs<b>안녕하세요</b>가나다라마
+    <hr>
+    <!--div는 각각이 블록효과가 나는 효과 -> 각 줄에 요소를 넣을때는 div
+    div는 span보다 훨씬 많이쓰게 될것-->
+
+    <div>
+        <div>abc</div>
+        <div>가나다</div>
+        <div>123</div>
+    </div>
+    <div>
+        <!--span은 한번 실행되면 엔터가 쳐지니까 span마다 띄어쓰기가됨
+        한 줄 중에 안 요소만 효과주고싶으면 span씀-->
+        <span>abc</span>
+        <span>가나다</span>
+        <span>123</span>
+    </div>
+</body>
+</html>

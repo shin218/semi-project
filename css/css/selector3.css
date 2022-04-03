@@ -1,0 +1,57 @@
+/*일반구조 선택자*/
+#div1>p:first-child{
+    background-color: tomato;
+    color: white;
+}
+#div1>p:last-child{
+    background-color: violet;
+    color: white;
+}
+#div1>p:nth-child(2n){
+    background-color: yellowgreen;
+    color: white;
+}
+#div1>p:nth-last-child(2){
+    background-color: aqua;
+    color: white;
+}
+
+/*형태구조 선택자*/
+#div2>p:first-of-type{
+    background-color: tomato;
+    color: white;
+}
+#div2>p:last-of-type{
+    background-color: tomato;
+    color: white;
+}
+#div2>p:nth-of-type(2n){
+    background-color: yellowgreen;
+    color: white;
+}
+/*
+#div2>p:nth-last-of-type(2){
+    background-color: blue;
+    color: white;
+}
+*/
+/*문자선택자*/
+#test3>p::first-letter{
+    color: salmon;
+}
+/*ui에서 보이는 한줄만 반영됨(동적인 어쩌고)*/
+#test3>p::first-line{
+    color: darkgreen;
+}
+/*글씨중에 드래그로 선택한거에 반영됨*/
+#test3>p::selection{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+/*부정선택자*/
+/*괄호안을 제외하고 적용-그래서 부정선택자임*/
+#test4>p:not(:nth-of-type(2n)){
+    background-color: brown;
+    color: white;
+}

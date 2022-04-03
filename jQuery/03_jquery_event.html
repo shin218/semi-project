@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/03_event.js"></script>
+    <style>
+        .d1{
+            color: red;
+        }
+        #frm>input{
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>이벤트</h1>
+    <hr>
+    <h2>이벤트를 연결하는 방법</h2>
+    <h3>1. inline이벤트 : 자바스크립트와 동일 onclick="func1();"</h3>
+    <h3>2. 고전이벤트모델 : $("선택자").이벤트명(function(){})</h3>
+    <h3>3. $("선택자").on("이벤트명",function(){});</h3>
+    <div id="test1">
+        <div class="d1" onclick="func1();">test-1</div>
+        <div class="d1">test-2</div>
+        <div class="d1">test-3</div>
+    </div>
+    <button id="btn1">클릭</button>
+    <hr>
+    <h2></h2>
+    <div class="levelup">
+        <button id="btn2">레벨업</button><span>HTML : </span><span>0</span><br>
+        <button id="btn3">레벨업</button><span>CSS : </span><span>0</span><br>
+        <button id="btn4">레벨업</button><span>JAVASCRIPT : </span><span>0</span><br>
+        <button id="allLevelup">전체레벨업</button>
+    </div>
+    <hr>
+    <h2>마우스 이벤트</h2>
+    <p id="click">클릭</p>
+    <p id="dblclick">더블클릭</p>
+    <p id="mouseupdown">마우스업/다운</p>
+    <div>현재 마우스 위치 : <span id="mousemove"></span></div>
+    <h2>입력양식 이벤트</h2>
+    <form action="test.html" id="frm">
+        입력1 : <input type="text" id="input1"><br>
+        입력2 : <input type="text" id="input2"><br>
+        <input type="radio" name="test1" value="1">
+        <input type="radio" name="test1" value="2"><br>
+        <input type="submit" value="제출" id="submit">
+    </form>
+</body>
+</html>

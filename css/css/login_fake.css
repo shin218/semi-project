@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.joinwrap{
+    width: 600px;
+    background-color: wheat;
+    margin: 0 auto;
+}
+.join-header{
+    height: 100px;
+    width: 300px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+.join-content{
+    overflow: hidden;
+}
+.item-box{
+    float: left;
+    width: 100px;
+    height: 500px;
+    background-color: palevioletred;
+}
+.input-box{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+}
+.btn-box{
+    height: 100px;
+    width: 300px;
+    background-color: powderblue;
+    margin: 0 auto;
+}

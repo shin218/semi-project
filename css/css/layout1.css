@@ -1,0 +1,199 @@
+.div1{
+    /*블록요소 넓이를 지정하지않으면 부모 넓이의 100%*/
+    width: 500px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
+.div1>div{
+    width: 50%;
+    height: 50px;
+    background-color: blueviolet;
+}
+.div2{
+    width: 50%;
+    height: 100px;
+    background-color: aquamarine;
+}
+/*body>div2>div로 상속되기 때문에 body의 비율에 따라 자손들이 움직임(자손이 모두 %로 엮여있기때문에)*/
+.div2>div{
+    width: 50%;
+    height: 50px;
+    background-color: orange;
+}
+.div3{
+    width: 500px;
+    height: 100px;
+    background-color: chartreuse;
+}
+.div3>div{
+    /*height를 지정하지 않으면 내부 컨텐츠의 높이만큼
+    (콘텐츠없으면 아예 화면에 안 나타남)
+     이것이 width와의 가장큰차이(width는 부모의100%)*/
+     /*넓이는 외부에서 안쪽으로 들어가면서 점점 좁아지게
+       높이는 안쪽이 커지면 바깥이 같이 커져나가도록 구현해야함
+       바깥거는 아예 높이지정 안하는게 나음
+       (★★★★존나중요★★★★)*/
+    background-color: crimson;
+}
+/*html에서 엔터가 한칸 띄어쓰기로 읽혀서 한칸띄고 사각형 붙은거고 사각형 완전히 붙이려면 html에서 개행하지 말아야함*/
+.div4{
+    background-color: saddlebrown;
+    display: inline-block;
+}
+.span1{
+    background-color: chartreuse;
+    display: inline-block;
+}
+.span2{
+    background-color: salmon;
+    display: inline-block;
+}
+.span3{
+    background-color: fuchsia;
+    display: inline-block;
+}
+.dis{
+    width: 200px;
+    height: 200px;
+}
+.span4{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    display: inline-block;
+}
+.span5{
+    width: 500px;
+    height: 500px;
+    background-color: hotpink;
+    display: inline-block;
+}
+.ul1{
+    display: none;
+}
+.div5{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.div5:hover+.ul1{
+    display: block;
+}
+.div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+/*테두리가 굉장히 중요함(부모자식요소 계산할때 필요함)*/
+#b1{
+    /*모양*/
+    border-top-style: solid;
+    border-left-style: dashed;
+    border-bottom-style: dotted;
+    border-right-style: double;
+    /*두께*/
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-bottom-width: 4px;
+    border-right-width: 3px;
+    /*색상*/
+    border-top-color: yellowgreen;
+    border-left-color: hotpink;
+    border-bottom-color: chartreuse;
+    border-right-color: skyblue;
+}
+#b2{
+    border-style: groove;
+    border-color: red;
+    
+}
+#b3 {
+    border-style: outset;
+    border-color: grey;
+}
+#b3:active{
+    border-style: inset;
+}
+#b4 {
+    border-style: inset;
+    border-color: grey;
+}
+#b5{
+    border-style: ridge;
+}
+/*border는 순서지켜야함(두께 스타일 색상)*/
+#b6{
+    border : 5px solid red
+}
+#b7{
+    border: 10px dashed blue
+}
+#b8{
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+}
+#b9{
+    border: 2px dashed red;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+#b10{
+    border: 3px solid blue;
+    border-radius: 50px;
+}
+#b11{
+    border: 3px solid black;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+#b12{
+    border-style: ridge;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+#b13{
+    border-style: hidden;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+.div-m{
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    background-color: antiquewhite;
+}
+.div6{
+    margin: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.div7{
+    padding: 20px;
+}
+.div8,.div9{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.div8>div{
+    width: 50%;
+    height: 200px;
+    background-color: goldenrod;
+    display: inline-block;
+}
+.div9{
+    height: 100px;
+    padding: 100px 0px;
+    
+}
+.div10{
+    width: 50%;
+    height: 100px;
+    background-color: coral;
+    font-size: 30px;
+    text-align: center;
+    /*margin: 0 auto -> 왼쪽 오른쪽 길이 똑같이 하라는 뜻*/
+    margin: 0 auto;
+    line-height: 100px;
+}

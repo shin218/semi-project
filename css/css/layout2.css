@@ -1,0 +1,47 @@
+.div{
+    width: 200px;
+    height: 200px;
+    border: 10px dashed black;
+    padding: 50px;
+    display: inline-block;
+}
+/*content-box가 기본임 border-box는 잘 안씀
+content-box는 width랑 height를 기준으로 만들어져서
+걍 content+padding+border가 200*200임*/
+.d1{
+    box-sizing: content-box;
+}
+.d2{
+    box-sizing: border-box;
+}
+.outer{
+    background-color: antiquewhite;
+    position: relative;
+}
+.in1{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.in2{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.in3{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#fixed{
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    position: fixed;
+}

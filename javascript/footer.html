@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer위치잡기</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            /*아래 코드는 wrap이 콘텐츠가 작아지더라도 높이를 무조건 최소 100vh가질 수 있도록 설정해줌*/
+            min-height: 100vh;
+        }
+        .header{
+            height: 100px;
+            background-color: powderblue;
+        }
+        .content{
+            background-color: palevioletred;
+            /*flex-grow는 min-height가 최소 100% 높이 가지니까 여기에서 비율 유지?하려고 1로 설정한것*/
+            /*로그인화면같은 경우 콘텐츠가 높이를 꽉채우지 못하기 때문에 이걸로 잡아주면 좋음*/
+            flex-grow: 1;
+        }
+        .content>h1{
+            margin: 0;
+        }
+        .footer{
+            height: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">헤더</div>
+        <div class="content">
+            <h1>내용</h1>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

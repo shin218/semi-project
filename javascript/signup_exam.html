@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단계가있는회원가입</title>
+    <link rel="stylesheet" href="css/signup_exam.css">
+</head>
+<body>
+    <div class="tabs_wrapper">
+        <nav class="tabs_header">
+            <button class="tabs_button" data-for-tab="1"><p>약관확인</p></button>
+            <button class="tabs_button" data-for-tab="2" ><p>필수정보입력</p></button>
+            <button class="tabs_button" data-for-tab="3"><p>상세정보입력</p></button>
+            <button class="tabs_button" data-for-tab="4" ><p>가입완료</p></button>
+        </nav>
+        <main class="tabs_content" data-for-tab="1">
+            <header class="terms_header">
+                이용약관 확인 및 동의
+            </header>
+            <section>
+                <input type="checkbox">이용약관 전체체크
+            </section>
+            <section>
+                <input type="checkbox">개인정보 수집 및 이용에 동의 (필수)
+                <ul>
+                    <li>수집항목:이름,휴대전화번호,생년월일,비밀번호</li>
+                    <li>수집이용목적:회원제 서비스 제공</li>
+                    <li>보유 및 이용기간:회원탈퇴 시 까지</li>
+                </ul>
+            </section>
+            <section>
+                <input type="checkbox">개인정보 수집 및 이용에 동의 (선택)
+                <ul>
+                    <li>수집항목:이름,휴대전화번호,생년월일,비밀번호</li>
+                    <li>수집이용목적:회원제 서비스 제공</li>
+                    <li>보유 및 이용기간:회원탈퇴 시 까지</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+
+    <!--
+    <div class="wrapper">
+        <nav class="tab">
+            <ul>
+                <li class="terms_info"><a href="#">약관확인</a>
+                    <div class="terms_wrap">
+                        <header class="terms_head">이용약관 확인 및 동의</header>
+                        <ul>
+                            <li>
+                                <input type="checkbox">이용약관 전체체크
+                            </li>
+                            <li>
+                                <input type="checkbox">개인정보 수집 및 이용에 동의 (선택)
+                                <ul>
+                                    <li>수집항목:이름,휴대전화번호,생년월일,비밀번호</li>
+                                    <li>수집이용목적:회원제 서비스 제공</li>
+                                    <li>보유 및 이용기간:회원탈퇴 시 까지</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox">개인정보 수집 및 이용에 동의 (필수)
+                                <ul>
+                                    <li>수집항목:이름,휴대전화번호,생년월일,비밀번호</li>
+                                    <li>수집이용목적:회원제 서비스 제공</li>
+                                    <li>보유 및 이용기간:회원탈퇴 시 까지</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <input type="submit" value="NEXT">
+                    </div>
+                </li>
+                <li class="required_info"><a href="#">필수정보입력</a>
+                <div class="required_info_wrapper">
+                    <header class="required_info_header">필수정보입력</header>
+                    <main class="required_info_main">
+                        <ul>
+                            <li>
+                                아이디
+                                <input type="text">
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </main>
+                </div>
+                </li>
+                <li class="option_info"><a href="#">상세정보입력</a></li>
+                <li class="compl_info"><a href="#">가입완료</a></li>
+            </ul>
+        </nav>
+
+    -->
+    <script src="js/signup_exam.js"></script>
+</body>
+</html>

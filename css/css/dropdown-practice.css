@@ -1,0 +1,49 @@
+body,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+.menu-1 {
+    text-align: center;
+}
+.menu-1 ul {
+    background-color: #dfdfdf;
+}
+
+.menu-1 > ul {
+    background-color: #dfdfdf;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.menu-1 > ul > li {
+    display: inline-block;
+}
+
+.menu-1 li > a {
+    /*사용자 편의를 위해 a태그의 범위가 li와 같아져야 하기 때문에 padding값을 a태그에 줌으로써 a태그를 확장해나감*/
+    padding: 10px;
+    display: block;
+}
+.menu-1 li:hover > a {
+    background-color: black;
+    color: white;
+}
+.menu-1 li {
+    /*position: relative는 absolute요소를 가둘 수 있는 집이됨*/
+    position: relative;
+}
+.menu-1 ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.menu-1 li:hover > ul {
+    display: block;
+}

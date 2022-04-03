@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/todolist.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Todo List</h1>
+        </div>
+        <div class="content">
+            <div class="input-box">
+                <input type="text" name="input">
+                <button class="add-btn">입력</button>
+            </div>
+            <div class="list-box">
+                <ul class="todolist">
+                    <li class="like">
+                        <span class="material-icons">
+                        favorite_border
+                        </span>
+                    </li>
+                    <li class="todo-text complete">할일내용</li>
+                    <li class="check-zone">
+                        <span class="material-icons check">
+                            check
+                        </span>
+                        <span class="material-icons close">
+                            close
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/js/todolist.js"></script>
+</body>
+</html>

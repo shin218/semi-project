@@ -1,0 +1,134 @@
+.c1{
+    color: blue;
+}
+.c2{
+    color: #0FC2C0;
+    /*
+    파란색
+    r : 00
+    g : 00
+    b : ff
+    #0000ff -> #00f
+    */
+}
+.c3{
+    color: rgb(0,0,255);
+}
+.c4{
+    color: rgba(0,0,255,0.5);
+}
+.td1{
+    text-decoration: none;
+}
+/*hover기능 써서 마우스올리면 underline생기도록 하는 기능*/
+.td1:hover{
+    text-decoration: underline;
+}
+.td2{
+    text-decoration: overline;
+}
+.td3{
+    text-decoration: underline;
+}
+.td4{
+    text-decoration: line-through;
+}
+.tt1{
+    text-transform: none;
+}
+.tt2{
+    text-transform: capitalize;
+}
+.tt3{
+    text-transform: uppercase;
+}
+.tt4{
+    text-transform: lowercase;
+}
+.shadow {
+    font-size: 100px;
+    font-weight: 900px;
+}
+.ts1{
+    color: orangered;
+    text-shadow: 10px 10px 10px orange;
+}
+.ts2{
+    text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ff3, 10px 15px 2px #f20;
+}
+.ws1{
+    white-space: normal;
+}
+/*줄바꿈없이 옆으로 표기됨*/
+.ws2{
+    white-space: nowrap;
+}
+/*normal의 정반대상태<pre>태그와 거의 유사*/
+.ws3{
+    white-space: pre;
+}
+/*공백은 1칸처리 엔터는 쳐줌 끝에만나면 개행해줌(normal상태에서 enter만 적용)*/
+.ws4{
+    white-space: pre-line;
+}
+/*공백처리 엔터쳐줌 끝에만나면 개행o*/
+.ws5{
+    white-space: pre-wrap;
+}
+.ls1{
+    letter-spacing: 10px;
+}
+.ls2{
+    letter-spacing: 20px;
+}
+.w-space1{
+    word-spacing: 10px;
+}
+.w-space2{
+    word-spacing: 20px;
+}
+.p{
+    width: 500px;
+    height: 50px;
+    border: 1px solid
+    black;
+}
+.ta1{
+    text-align: left;
+}
+.ta2{
+    text-align: right;
+}
+.ta3{
+    text-align: center;
+}
+.ta4{
+    text-align: justify;
+}
+.ti1{
+    text-indent: 100px;
+}
+.ti2{
+    text-indent: 200px;
+}
+.lh1{
+    line-height: 20px;
+}
+.lh2{
+    line-height: 40px;
+}
+/*line-height는 높이 가운데 정렬 기능이 없어서 p의 line-height랑 lh3 lign-height를 일치시켜서 높이 가운데 정렬맞춤*/
+.lh3{
+    text-align: center;
+    line-height: 50px;
+}
+/*글씨가 범위 벗어나면 잘라버림*/
+.to1{
+    text-overflow: clip;
+    overflow: hidden;
+}
+/*글씨가 범위 벗어나면 ...으로 표기(ellipsis는 생략이라는 뜻)*/
+.to2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

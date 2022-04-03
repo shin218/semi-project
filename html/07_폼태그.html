@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+    <!-- get하고 post 꼭 다시 보기 너무너무너무 중요함~.~ name속성 꼭 적고(db넘기는거라 강조하시는듯) -->
+    <!-- test.html페이지에 get방식으로 데이터를 전송하는 form 태그 (굉장히 중요함!!!)-->
+    <!-- form 태그 안에 input이 위치해야 데이터 전송가능 -->
+    <form action="test.html" method="get">
+        아이디 : <input type="text" name="idid" value="안녕하세요"><br>
+        비밀번호 : <input type="password" name="pwpw"><br>
+        <!-- input type='submit'은 submit이 속해있는 form태그를 action페이지로 제출하는 버튼 -->
+        <input type="submit" value="로그인"><br>
+    </form>
+    <br><br>
+    <!-- 실제 구현할때는 id랑 pw post방식으로 구현해야함! -->
+    <!-- form 밖에있는 input은 데이터가 전송되지 않음 -->
+    <form action="test1.html" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            아이디 : <input type="text" name="memberId"><br>
+            비밀번호 : <input type="password" name="memberPw"><br><br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </fieldset>
+    </form>
+    <hr>
+    <form action="test2.html" method="get">
+        <fieldset>
+            <legend>input태그 속성테스트</legend>
+            <!-- value는 실제 값이 미리 입력 vs placeholder는 실제값x -->
+            <!-- readonly는 값수정x 미리 입력된 값 그대로 전송됨-->
+            value 속성 : <input type="text" name="input1" value="자동으로 입력되는 값"><br>
+            placeholder 속성 : <input type="text" name="input2" placeholder="아이디"><br>
+            readonly 속성 : <input type="text" name="input3" value="읽기전용" readonly><br>
+            disabled 속성 : <input type="text" name="input4" value="비활성화" disabled><br>
+            <!-- db의 not null항목을 만족시키기위해 프론트엔드에서 반드시 값을 입력받는것이 required -->
+            required 속성 : <input type="text" name="input5" required><br>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+    <hr>
+    <form action="test3.html" method="get">
+        <fieldset>
+            <legend>input type 종류</legend>
+            text : <input type="text" name="a"><br>
+            password : <input type="password" name="b"><br>
+            hidden : <input type="hidden" name="c" value="숨겨진값"><br>
+            button : <input type="button" name="d" value="클릭" onclick="func1();"><br>
+            <!--form태그 내부에서 기능을 위한 button태그를 사용하는경우
+                반드시 type="button" 속성을 설정해야함
+                type속성을 생략하는 경우에는 자동으로 submit으로 동작
+                (button의 default값이 submit이니까 주의하라는 의미인듯)
+            -->
+            기능을 위한 태그 : <button type="button">기능저장</button> <br>
+            file : <input type="file" name="d"><br>
+            radio : <br>
+                <!-- name 속성이 같은 여러 radio타입 중 1개만 선택이 가능(성별같이 택1) -->
+                <input type="radio" name="e" value="1">일<br>
+                <input type="radio" name="e" value="2">이<br>
+                <input type="radio" name="e" value="3">삼<br>
+                <input type="radio" name="e" value="4">사<br>
+            radio : <br>
+            <!-- 동일한 name으로 여러값을 선택해서 데이터 전송할때(관심사 3개 골라주세요 같이 다중선택 필요할때) -->
+            <input type="checkbox" name="f" value="1">일<br>
+            <input type="checkbox" name="f" value="2">이<br>
+            <input type="checkbox" name="f" value="3">삼<br>
+            <input type="checkbox" name="f" value="4">사<br>
+            button 태그 : 
+            <button type="submit">제출하기</button>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+    <hr>
+    <form action="test4.html" method="post">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="id">아이디</label> : <input type="text" name="id" id="id" required><br>
+            비밀번호 : <input type="password" name="pw" required><br>
+            이름 : <input type="text" name="name" required><br>
+            성별 :
+            <!-- label for="a" 지정해서 label문으로 클릭으로 선택될 값 넣으면 그거 클릭해도 선택가능 -->
+            <!-- radio는 택1 vs checkbox는 중복선택 가능 -->
+                <input type="radio" name="gender" value="남" id="m">
+                <label for="m">남성</label>
+                <input type="radio" name="gender" value="여" id="f"> 
+                <label for="f">여성</label>
+            <br>
+                취미 :
+                <input type="checkbox" name="hobby" value="독서"> 독서 
+                <input type="checkbox" name="hobby" value="게임"> 게임 
+                <input type="checkbox" name="hobby" value="꽃꽂이"> 꽃꽂이 
+                <input type="checkbox" name="hobby" value="서핑"> 서핑 
+                <input type="checkbox" name="hobby" value="코딩"> 코딩
+            <br>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="초기화"> 
+        </fieldset>
+    </form>
+
+    <form action="test5.html" method="get">
+        <fieldset>
+            <legend>input type - HTML5 양식 - 1</legend>
+            color : <input type="color" name="a"><br>
+            date : <input type="date" name="b" min="2021-01-01"><br> 
+            datetime-local : <input type="datetime-local" name="c"><br>
+            month : <input type="month" name="d"><br>
+            week : <input type="week" name="e"><br>
+            time : <input type="time" name="g"><br>
+            number : <input type="number" name="h" min="1" max="10" step="2"><br>
+            range : <input type="range" name="i" min="1" max="100" step="1"><br>
+            <!-- search기능은 거의 쓸일x -->
+            search : <input type="search" name="j"><br>
+            url : <input type="url" name="k"><br>
+            email : <input type="email" name="l"><br>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+    <form action="test6.html" method="get">
+        <fieldset>
+            <legend>값 전송을 위한 input태그 이외의 태그</legend>
+            <input type="text" name="b"><br>
+            <select name="a">
+                <!-- ui 사용자에게 보여지는 것과 실제db들어가는 값이 다르면 value써야하고 아니면 안써도됨(선택)-->
+                <option value="1">일</option>
+                <option value="2">이</option>
+                <option value="3">삼</option>
+                <option value="4">사</option>
+            </select>
+            <br>
+            <!-- input은 1줄밖에 입력 안됨 vs textarea는 게시글같이 여러줄 입력가능-->
+            <!-- textarea 크기는 cols와 rows로 조절(행렬크기 생각하면됨)-->
+            <textarea name="c" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+</body>
+</html>
+<script>
+    function func1(){
+        alert("짠!!!!!!!!!")
+    }
+</script>

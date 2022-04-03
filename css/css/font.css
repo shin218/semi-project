@@ -1,0 +1,26 @@
+/*폰트는 여러 페이지에 쓰기 때문에 따로빼둠*/
+@font-face {
+    font-family: ns-thin;
+    src: url(../Noto_Sans_KR/NotoSansKR-Thin.otf);
+}
+@font-face {
+    font-family: ns-light;
+    src: url(../Noto_Sans_KR/NotoSansKR-Light.otf);
+}
+@font-face {
+    font-family: ns-medium;
+    src: url(../Noto_Sans_KR/NotoSansKR-Medium.otf);
+}
+@font-face {
+    font-family: ns-bold;
+    src: url(../Noto_Sans_KR/NotoSansKR-Bold.otf);
+}
+@font-face {
+    font-family: ns-black;
+    src: url(../Noto_Sans_KR/NotoSansKR-Black.otf);
+}
+/*기본 글씨체랑 색상 잡으려고 * selector쓴것*/
+*{
+    font-family: ns-medium;
+    color: #2c2d34;
+}

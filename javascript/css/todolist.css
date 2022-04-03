@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+.header{
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 36px;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.input-box{
+    overflow: hidden;
+}
+.input-box>*{
+    float: left;
+    font-size: 20px;
+}
+[name=input]{
+    width: 80%;
+    outline: none;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    height: 40px;
+}
+.add-btn{
+    width: 20%;
+    background-color: powderblue;
+    color: white;
+    outline: none;
+    height: 40px;
+}
+.list-box{
+    margin-top: 30px;
+}
+.todolist{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+}
+.todolist>li{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+}
+.like{
+    width: 20%;
+}
+.todo-text{
+    width: 70%;
+}
+.check-zone{
+    width: 10%;
+    text-align: right;
+}
+.like>span{
+    color: hotpink;
+    font-size: 24px;
+}
+.close{
+    color: red;
+}
+.check{
+    color: green;
+}
+.complete{
+    text-decoration: line-through;
+}

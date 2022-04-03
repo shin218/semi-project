@@ -1,0 +1,69 @@
+.ff1{
+    font-family: "궁서체";
+}
+.ff2{
+    font-family: "바탕체","고딕체","궁서체";
+}
+.ff3{
+    font-family: "";
+}
+/*css는 오류내지않고 그냥 실행되기때문에 꼼꼼히 코딩해야함!!*/
+.webfont1{
+    font-family: 'Black Han Sans', sans-serif;
+}
+/*다운로드한 글꼴을 등록*/
+@font-face {
+    font-family: ns-light;
+    src: url(../Noto_Sans_KR/NotoSansKR-Light.otf);
+}
+.webfont2{
+    font-family: ns-light;
+}
+@font-face {
+    font-family: ns-bold;
+    src: url(../Noto_Sans_KR/NotoSansKR-Black.otf);
+}
+.webfont3{
+    font-family: ns-black;
+}
+.size1{
+    font-size: 30px;
+}
+.size2{
+    font-size: 1.5em;
+}
+.fw1{
+    /*font-weight: normal;*/
+    font-weight: 400;
+}
+.fw2{
+    font-weight: lighter;
+}
+.fw3{
+    font-weight: bold;
+}
+.fw4{
+    /*font-weight: bolder;*/
+    font-weight: 5000;
+}
+.fw{
+    font-variant: small-caps;
+}
+.fs1{
+    font-style: italic;
+}
+.fs2{
+    font-style: oblique;
+}
+.f1{
+    line-height: 50px;
+}
+.f2{
+    font: 16px/30px
+    "궁서체";
+}
+.f3{
+    font: italic bold
+    20px/20px
+    "바탕체";
+}

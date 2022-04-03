@@ -1,0 +1,59 @@
+/*전체 선택자*/
+/*
+*{
+    color: red;
+}
+*/
+/*태그선택자*/
+p{
+    color: cornflowerblue;
+}
+#li3{
+    color: chocolate;
+}
+#li5{
+    color: blue;
+}
+/*
+#li1, #li2{
+    color: bisque;
+}
+*/
+/* 클래스 선택자는 .*/
+.li1 {
+    background-color: darkorange;
+}
+.li2{
+    background-color: yellowgreen;
+}
+/*
+.c1{
+    color: white;
+    background-color: red;
+}
+
+.c2{
+    color: white;
+    background-color: blue;
+}
+.c3{
+    color: darkgray;
+    background-color: blue;
+}
+.c4{
+    color: darkgray;
+    background-color: red;
+}
+*/
+.t-white{
+    color: white;
+}
+.t-grey{
+    color: darkgray;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-blue{
+    background-color: blue;
+}

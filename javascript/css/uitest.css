@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+table td{
+    border: 1px solid black;
+}
+.div1{
+    color: white;
+    background-color: salmon;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.div2>td{
+    padding: 8px 0;
+}
+.div4{
+    background-color: rgb(246, 248, 221);
+    font-size: 14px;
+    text-align: left;
+    padding: 0 30px;
+}
+#submit{
+    
+}
+.div0{
+    padding: 10px;
+}

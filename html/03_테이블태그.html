@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블태그</title>
+    <style>
+        <!--테이블 thead/tbody/tfoot 안쓰면 프로그램에서 알아서 tbody로 인식해서 넣어버림/그래서 tbody-background-color 잡았을때 tbody지정 안한애들것도 다 잡힌것-->
+        thead{
+            background-color: aquamarine;
+        }
+        tbody{
+            background-color: bisque;
+        }
+        tfoot{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!--이 구조가 유지되어야함/table 내부에 tr 내부에 td-->
+    <table border="1">
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+            <td>내용4</td>
+        </tr>
+        <tr>
+            <td>내용5</td>
+            <td>내용6</td>
+            <td>내용7</td>
+            <td>내용8</td>
+        </tr>
+        <tr>
+            <td>내용9</td>
+            <!--테이블 내용이 길어지면 열의 넓이가 같이 넓어짐-->
+            <td>내용내용내용내용내용내용내용내용내용내용</td>
+            <td>aaa</td>
+            <td>bbb</td>
+        </tr>
+        <tr>
+            <td>aaa</td>
+            <td>aaa</td>
+            <td>aaa</td>
+            <td>aaa</td>
+            <td>aaa</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <!-- 테이블을 설명하는 내용을 작성 -->
+        <!-- caption은 제목을 다는거라 table에서는 제외 -->
+        <caption>브라우저 종류</caption>
+        <tr>
+            <!-- th는 th와 차이점: 진하고 가운데정렬 -> table header라는 뜻에서 컬럼명 작성시 사용-->
+            <th>브라우저 이름</th>
+            <th>개발회사</th>
+            <th>홈페이지</th>
+        </tr>
+        <tr>
+            <td>크롬</td>
+            <td>google</td>
+            <td>http://www.google.com</td>
+        </tr>
+        <tr>
+            <td>사파리</td>
+            <td>apple</td>
+            <td>http://www.apple.com</td>
+        </tr>
+        <tr>
+            <td>파이어폭스</td>
+            <td>Mozilla</td>
+            <td>http://www.mozilla.org</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th colspan="3">회원정보</th>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>이신영</td>
+            <td>20</td>
+            <td>경기도 고양시</td>
+        </tr>
+        <tr>
+            <td>개부영</td>
+            <td>30</td>
+            <td>서울시 강남구</td>
+        </tr>
+        <tr>
+            <td>박희숙</td>
+            <td>50</td>
+            <td>경기도 화성시</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th rowspan="3">이름</th>
+            <td>이신영1</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>이신영2</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>이신영3</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>이신영4</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th width="100px">제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+        </tr>
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+        </tr>
+        <tr>
+            <!--같은 컬럼이나 로우는 가장 넓은 값을 따라감(width든 height든)-->
+            <th width="200px">제목4</th>
+            <th>제목5</th>
+            <th height="100px">제목6</th>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="2" rowspan="2" width="150px" height="150px">사진</th>
+            <th width="80px">이름</th>
+            <th width="200px"></th>
+        </tr>
+        <tr>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th width="80px" height="50px">주소</th>
+            <th colspan="3"></th>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>이신영1</td>
+                <td>20</td>
+                <td>경기도 고양시</td>
+            </tr>
+            <tr>
+                <td>이신영2</td>
+                <td>30</td>
+                <td>서울시 강남구</td>
+            </tr>
+            <tr>
+                <td>이신영3</td>
+                <td>40</td>
+                <td>부산시 사하구</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>총 인원</th>
+                <td colspan="2">3명</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

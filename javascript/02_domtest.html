@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM Test</h1>
+    <hr>
+    <div id="d1" class="dd1" name="name1">첫번째</div>
+    <div id="d2" class="dd1" name="name1">두번째</div>
+    <div id="d3" class="dd2" name="name1">세번째</div>
+    <div id="d4" class="dd2" name="name2">네번째</div>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button id="btn3">버튼3</button>
+    <button id="btn4">버튼4</button>
+    <hr>
+    <input type="text" name="input1" id="input1" value="초기값"><br>
+    <input type="password" name="input2" id="input2"><br>
+    <button id="btn5">버튼5</button>
+    <button id="btn6">버튼6</button>
+    <button id="btn7">버튼7</button>
+    <input type="checkbox" id="change" name="change">
+    <label for="change">비밀번호 보기</label>
+    <hr>
+    <a href="http://www.naver.com" id="link">네이버로 이동</a>
+    <br>
+    <button id="btn8">구글로 변경</button>
+    <button id="btn9">네이버로 변경</button>
+    <hr>
+    <div class="div-wrap">
+        <div class="test-div"></div>
+        <div class="test-div"></div>
+        <div class="test-div"></div>
+        <div class="test-div"></div>
+    </div>
+    <!--
+        btn10 클릭시 크기 300x300으로 키우고 배경색 변경
+        btn11 클릭시 btn10으로 변경된값 원래대로
+    -->
+    <button id="btn10">키우기</button>
+    <button id="btn11">원래크기로</button>
+    <button id="btn12">토글</button>
+    
+    <style>
+        .div-wrap{
+            overflow: hidden;
+        }
+        .test-div{
+            width: 150px;
+            height: 150px;
+            float: left;
+            border: 1px solid black;
+            background-color: palevioletred;
+        }
+        .pick{
+            width: 300px;
+            height: 300px;
+            background-color: powderblue;
+        }
+    </style>
+    <script src="js/08_dom2.js"></script>
+</body>
+</html>
